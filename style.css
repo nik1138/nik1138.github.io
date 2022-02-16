@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-image: radial-gradient(
+    circle at 50% -20.71%,
+    #e6ffff4f 0,
+    #b5def265 50%,
+    #84bdd944 100%
+  );
+}
+
+header {
+  width: 90vw;
+  height: 6vh;
+  border-radius: 0 0 2vh 2vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(119, 196, 240, 0.726) 0%,
+    rgba(0, 183, 255, 0.37) 100%
+  );
+}
+
+.logo {
+  margin: 0 2vw;
+  border-radius: 50%;
+  width: 5vh;
+  box-shadow: 0 0 2px;
+}
+
+.logo:hover {
+  width: 5.5vh;
+}
+
+.navLink {
+  font-size: calc(12px + 1vh);
+  margin: 0 2vw;
+  text-decoration: none;
+  color: black;
+}
+
+.navLink:hover {
+  color: snow;
+}
+
+main {
+  width: 88vw;
+  flex-grow: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.infoBox {
+  text-align: center;
+  border-radius: 1vh;
+}
+
+@media (max-width: 800px) {
+  .infoBox {
+    height: 75vh;
+    width: 80vw;
+    flex-grow: 1;
+    margin: 2vh auto;
+    padding: 2vh 1vw;
+  }
+}
+
+@media (min-width: 801px) {
+  main {
+    display: flex;
+  }
+
+  .infoBox {
+    height: 60vh;
+    width: 25vw;
+    flex-grow: 1;
+    margin: 10vh 2vw;
+    padding: 2vh 1vw;
+  }
+}
+
+.hardSkills {
+  background: #84bdd944;
+}
+
+.point {
+  border-radius: 1vw;
+  margin-top: 1vh;
+  padding: 1vh 1vw 1vh 1vw;
+}
+
+.point:hover {
+  box-shadow: 0 0 5px;
+}
+
+.JS {
+  background: #f0db4f;
+}
+
+.React {
+  background: #34a4dc;
+}
+
+.softSkills {
+  background: #bb59a665;
+}
+
+.expectations {
+  background: #a8a74165;
+}
+
+footer {
+  width: 90vw;
+  height: 6vh;
+  border-radius: 10px 10px 0 0;
+  background-color: gainsboro;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(
+    0deg,
+    rgba(119, 196, 240, 0.726) 0%,
+    rgba(0, 183, 255, 0.37) 100%
+  );
+  display: flex;
+  align-items: center;
+}
+
+.footerText {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(12px + 1vh);
+}
