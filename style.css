@@ -14,12 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #e6ffff4f 0,
-    #b5def265 50%,
-    #84bdd944 100%
-  );
+  background: #fffffc;
 }
 
 header {
@@ -30,11 +25,7 @@ header {
   margin-right: auto;
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    rgba(119, 196, 240, 0.726) 0%,
-    rgba(0, 183, 255, 0.37) 100%
-  );
+  background: #9bf6ff;
 }
 
 .logo {
@@ -73,7 +64,7 @@ main {
 
 @media (max-width: 800px) {
   .infoBox {
-    height: 75vh;
+    height: auto;
     width: 80vw;
     flex-grow: 1;
     margin: 2vh auto;
@@ -90,67 +81,48 @@ main {
     height: 60vh;
     width: 25vw;
     flex-grow: 1;
-    margin: 10vh 1vw;
+    margin: 3vh 1vw;
     padding: 2vh 1vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infoBox a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+  }
+  .infoBox h3 {
+    margin-bottom: 1vh;
   }
 }
 
 .hardSkills {
-  background: #84bdd944;
+  background: #caffbf;
 }
 
 .point {
   border-radius: 1vw;
   margin-top: 1vh;
-  padding: 1vh 1vw 1vh 1vw;
+  padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+  background: #fdffb6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
 }
 
 .point:hover {
   box-shadow: 0 0 5px;
 }
 
-.JS {
-  background: #f0db4f;
-}
-
-.React {
-  background: #34a4dc;
-}
-
-.dotNet {
-  background: #512bd4;
-}
-
-.dotNet p {
-  color: rgb(219, 250, 250);
-}
-
-.dotNet h3 {
-  color: rgb(86, 223, 147);
-}
-
 .softSkills {
-  background: #bb59a665;
-}
-
-.cmit {
-  background: snow;
-}
-
-.easyGoing {
-  background: yellow;
-}
-
-.teamPlayer {
-  background-color: aquamarine;
+  background: #ffc6ff;
 }
 
 .expectations {
-  background: #a8a74165;
-}
-
-.todo {
-  background: #f0db4f;
+  background: #a0c4ff;
 }
 
 footer {
@@ -160,11 +132,7 @@ footer {
   background-color: gainsboro;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(
-    0deg,
-    rgba(119, 196, 240, 0.726) 0%,
-    rgba(0, 183, 255, 0.37) 100%
-  );
+  background: #9bf6ff;
   display: flex;
   align-items: center;
 }
